@@ -5,4 +5,8 @@
    package Binder is
      for Default_Switches ("Ada") use ("-static");
    end Binder;
+
+   package Linker is
+     for Default_Switches ("Ada") use ("--GCC=musl-gcc");
+   end Linker;
 end Hello;
