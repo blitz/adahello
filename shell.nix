@@ -4,5 +4,9 @@
 }:
 
 pkgs.mkShell {
-  packages = [ pkgs.gnat pkgs.gprbuild pkgs.glibc.static ];
+  packages = with pkgs; [
+    niv
+
+    gnat gprbuild glibc.static
+  ];
 }

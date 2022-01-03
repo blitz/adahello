@@ -1,10 +1,12 @@
 # Statically Linked Ada in Nix
 
 This repository contains an example of building an
-[Ada](https://en.wikipedia.org/wiki/Ada_(programming_language) program
-using [GNAT](https://en.wikipedia.org/wiki/GNAT) as a static binary.
+[Ada](https://en.wikipedia.org/wiki/Ada_(programming_language)) program
+using [GNAT](https://en.wikipedia.org/wiki/GNAT) as a static binary using [Nix](https://nixos.org/).
 
-See `nix/build.nix` for the build instructions.
+To try it out, use `nix-build ./nix/release.nix -A adahello`.
+
+See `nix/build.nix` for the interesting part.
 
 ## Current Limitations
 
